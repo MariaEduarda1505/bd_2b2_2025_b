@@ -24,6 +24,6 @@ create table dependente(
     nome varchar(100),
     dt_nascimento date,
     sexo char(1),
-    constraint pk_dependente primary key (cos_dep, cod_emp),
+    constraint primary key (cod_dep, cod_emp),
     constraint fk_emp_dep foreign key (cod_emp) references empregado(cod_emp)
 );
